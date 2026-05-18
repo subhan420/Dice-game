@@ -19,6 +19,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    position: relative;
     padding-top: 50px;
 }
 
@@ -26,12 +27,15 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    padding-top: 40px;
 }
 
 #player2{
     background-color: rgba(255, 255, 255, 0.2);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding-top: 40px;
+    margin-top: -20px;
 }
 
 #player1 , #player2{
@@ -64,4 +68,25 @@ body {
     outline: none;
     border-radius: 10px;
     padding: 20px 0 20px 5px;
+}
+
+#startBtn{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 10;
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+
+    background: white;
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
 }
